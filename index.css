@@ -1,0 +1,331 @@
+nav{
+    position: fixed;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    background-image: linear-gradient(to right, #000000, #434343);
+    box-shadow: 10px 1px 10px 1px rgba(0, 0, 0, 1);
+}
+.Header {
+    /* text-align: center; */
+    height: 100vh;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    animation: fadeInHeader 1s;
+}
+@keyframes fadeInHeader {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.Header-name {
+    border: 1px solid transparent;
+    margin-top: 12vh;
+    min-height: 45vh;
+    max-height: 50vh; 
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .3);
+    letter-spacing: 8px;
+    position: relative;
+}
+
+.Header h1 {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 3vh;
+}
+.Header-menu {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    /* animation: fadeInMenu 8s; */
+}
+@keyframes fadeInMenu {
+    0%{ opacity: 0; }
+    70%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+.Header-menu li {
+    display: inline-block;
+}
+.Header-menu li {
+    background: none;
+    color: white;
+    border: 1px solid white;
+    height: 5vh;
+    min-width: 13vw;
+    padding: 8px 10px;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 14px;
+    margin: 2vh 1.5vw;
+    border-radius: 15px;
+    letter-spacing: 0.18em;
+}
+.Links {
+    color: white;
+    text-decoration: unset;
+}
+.Header-menu li:hover {
+    border-color: wheat;
+    transform: scale(1.03);
+}
+.Header-menu li:hover  .Links{
+    color: wheat;
+}
+
+#header {
+    overflow: hidden;
+    position: relative;
+    color: white;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+#header:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid white;
+    border-left: 300px solid transparent;
+    border-right: 900px solid transparent;
+}
+
+#header {
+    overflow: hidden;
+    position: relative;
+    color: white;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+#header:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 60px solid white;
+    border-left: 300px solid transparent;
+    border-right: 900px solid transparent;
+}
+.section-container{
+    min-height: 88vh;
+    position: relative;
+    padding: 5vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.About {
+    margin: 5vh auto;
+    min-height: 70vh;
+    max-width: 80vw;
+    border-radius: 150px 5px;
+    /* box-shadow: 5px 2px 10px 5px palegoldenrod; */
+    /* box-shadow: 5px 2px 8px 3px rgb(151, 203, 255); */
+    box-shadow: 5px 2px 10px 5px rgba(0, 0, 0, .2);
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    /* animation: fadeInMenu 10s; */
+}
+
+.About h1 {
+    font-variant: small-caps;
+    width: 60%;
+    float: left;
+    padding-left: 20%;
+    font-size: 42px;
+}
+
+.About-pic {
+    width: 38%;
+    float: right;
+    padding: 5px;
+    height: 70vh;
+    margin: -20px; /* to counter the effect of padding in about */
+    border-radius: 5px 5px 150px 5px;
+    background-size: cover;
+}
+
+.About-content{
+    /* font-variant: small-caps; */
+    font-size: 18px;
+    width: 60%;
+    float: left;
+    padding: 5px;
+    height: 40vh;
+    border-radius: 5px;
+}
+.social-media{
+    float: right;
+    margin: 80px -20px 0px 0px;
+    width: 60px;
+    color: rgb(53, 53, 53);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    font-size: 32px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 0px 30px 30px 0px;
+}
+.social-media  i{
+    margin: 7px;
+}
+.Skills, .Projects{
+    margin: 5vh auto;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    min-height: 70vh;
+    max-width: 85vw;
+    border-radius: 10px;
+    /* border-radius: 150px 5px; */
+    box-shadow: 5px 2px 10px 5px rgba(0, 0, 0, .2);
+    padding: 20px;
+    text-align: left;
+    font-size: 19px;
+}
+.Skills{
+    background-color: white;
+    text-align: center;            
+}
+.Skills > h1{
+    font-variant: small-caps;
+    font-size: 42px;
+}
+.Projects > h1{
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 42px;
+}
+.Skills table td{
+    font-size: 16px;
+    /* border: none; */
+}
+.Projects dd{
+    margin-bottom: 100px;
+}
+.project-img{
+    width: 780px;
+}
+#contact{
+    width: 100%; 
+    min-height: 110vh;
+    display: block; 
+    background-image: url('https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact > p{
+    padding: 10px;
+    float: right;
+    width: 400px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: right;
+    color: white
+}
+        
+.contact-container{
+    float: right;
+    width: 90%;
+    height: 85vh;
+    margin-top: 2vh;
+    margin-right: 50px;
+    background-color: rgba(0,0,0,0.85);
+    text-align: center;
+    border-radius:10px;
+}
+
+.contact-subcontainer{
+    display: inline-block;
+    padding: 25px;
+    width:48%;
+    min-height: 100%;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    overflow: hidden;
+}
+#map{
+    border-radius: 1px;
+    display: block;
+    width: 100%;
+    height: 60%;
+    margin-top: 8vh;
+    margin-right: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(255,255,255,0.5);
+    border-radius: 5px;
+    filter: brightness(98%);
+}
+#map:hover{
+    filter: brightness(100%);
+}
+.map_canvas{
+    overflow: hidden;
+    background: none!important;
+    height: 400px;
+    width: 100%;
+}
+
+.contact-subcontainer > p{
+    margin-top: 0;
+    margin-bottom: 4vh;
+    font-variant: small-caps;
+    font-size: 45px;
+}
+.contact-subcontainer > form {
+    margin: 0;
+}
+.contact-subcontainer > form > input{
+    margin: 2vh auto;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+}
+.contact-subcontainer > form > textarea{
+    width: 100%;
+    border-radius: 4px;
+    margin: 2vh auto;
+    font-size: 15px;
+    padding: 10px;
+}
+.contact-subcontainer > form > button{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 2vh auto;
+    background-color: dodgerblue;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Footer {
+    text-align: center;
+    min-height: 5vh;
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
